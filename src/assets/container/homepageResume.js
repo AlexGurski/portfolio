@@ -35,20 +35,7 @@ const HomepageHeader = () => {
                                     </div>
                                 </div>
                                 <div className="resume_header_right">
-                                    
-                                    <div class="example">
-                                        <div class="block">
-                                            <div class="side -main"></div>
-                                            <div class="side -left"></div>
-                                        </div>
-                                        <div class="block">
-                                            <div class="side -main"></div>
-                                            <div class="side -left"></div>
-                                        </div>
-                                        <div class="block">
-                                            <div class="side -main"></div>
-                                            <div class="side -left"></div>
-                                        </div>
+                                    <div class="resume_photo">
                                     </div>
 
                                 </div>

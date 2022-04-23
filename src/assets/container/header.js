@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import "../style/style.css"
 import {Link, Outlet}  from 'react-router-dom'
-
-const Header = () => {
+const Menu =(props) =>{
     const [check, setCheck] = useState(false);
-    return(
-        <>
-            <div className="header">
-                <div className="header_text">
-                    Alex Gurski
-                </div>
+    return (
                 <div className="menu-wrap">
-                    <input type="checkbox" className="toggler" checked={check} onClick={()=>setCheck(!check)}/>
-                    <div className="hamburger"><div></div></div>
+                    
+                    <input type="checkbox" className="toggler" checked={check} onClick={()=>setCheck(!check)}/>   
+                                     
+                    <div className="hamburger">{props.name}<div></div></div>
                     <div className="menu">
                         <div>
                             <div>
@@ -26,10 +22,22 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+    )
+}
+                
+const Header = () => {
+    return(
+        <>
+            <div className="header">
+                <div className="header_text">
+                    Alex Gurski
+                </div>
+                <Menu/>
             </div>
             <Outlet/>
         </>
     )
 }
 
-export default Header;
+export {Header} ;
+export {Menu} ;

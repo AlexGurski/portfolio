@@ -1,5 +1,9 @@
 import React,{useEffect, useState} from "react";
 import "../style/about.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {Menu} from "../container/header"
+
 const stylesheet = {
     about:{
         display:'flex',
@@ -10,6 +14,16 @@ const stylesheet = {
 }
 
 const About = () => {
+
+        useEffect(()=>{
+          AOS.init();
+        },[])
+
+       setTimeout(()=>{
+        setDelay({transitionDelay:'0ms', transition:'all 300ms'})
+       },0)
+
+    const [delay,setDelay] = useState()
     const [hello,setHello] = useState({text:'Hello.',style:{color:'white'}})
     const [iam,setIam]= useState({text:'I am',style:{color:'red'}})
     const [alex,setAlex]= useState({text:'Alex',style:{color:'red'}})
@@ -26,21 +40,29 @@ const About = () => {
         if (id==="alex") {setAlex({text:'Alex',style:{color:'red',transform: "translate(0px,0)"}})}
     }
 
+    const [menuName, setMenuName] = useState('Alex Gurski')
+    const [menuStyle, setMenuStyle] = useState({color:'white', position:'fixed', top:'3%', right:'3.5%', zIndex:1 })
     return (
        <div className="about">
-           <div className="about_photo"></div>
-           <div style={stylesheet.about} className="about_header_text">
-            <h1 style={hello.style}className="about_header" id="hello"
-                onMouseEnter={(el)=>{onHover(el.target.id)}}
+           <div className="about_photo" ></div>
+           <div className="about_menu" style={menuStyle}
+           onMouseEnter={()=>{setMenuName('Menu'); setMenuStyle({...menuStyle,  color:'red'})}} 
+           onMouseLeave={()=>{setMenuName('Alex Gurski'); setMenuStyle({...menuStyle, color:'white'})}} 
+           > 
+             <Menu name={menuName} /> 
+           </div>
+           <div style={stylesheet.about} className="about_header_text" >
+            <h1 style={{...hello.style, ...delay }}className="about_header" id="hello" data-aos="fade-up"  data-aos-duration="1000"  
+                onMouseEnter={(el)=>{onHover(el.target.id)}} 
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}
             >{hello.text}
             </h1>
-            <h1 style={iam.style}className="about_header" id="iam"
+            <h1 style={{...iam.style, ...delay }}className="about_header" id="iam" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="500"
                 onMouseEnter={(el)=>{onHover(el.target.id)}}
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}
             >{iam.text}
             </h1>
-            <h1 style={alex.style}className="about_header" id="alex"
+            <h1 style={{...alex.style, ...delay }}className="about_header" id="alex" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="1000"
                 onMouseEnter={(el)=>{onHover(el.target.id)}}
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}
             >{alex.text}

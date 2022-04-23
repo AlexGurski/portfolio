@@ -20,28 +20,34 @@ const Hobby = () => {
             </div>
             <div className="section">
             <div className="fixed">
-                <h1>Snowboarding</h1>
-                <ul className="img-list">
-                    <li><span className="img-placeholder"></span></li>
-                    <li><img src={require('../image/snowboard6.jpg')}/></li>
-                    <li><img src={require('../image/snowboard1.jpg')}/></li>
-                    <li><img src={require('../image/snowboard3.jpg')}/></li>
-                    <li><span className="img-placeholder"></span></li>
-                    <li><img src={require('../image/snowboard5.jpg')}/></li>
-                    <li><span className="img-placeholder"></span></li>
-                    <li><img src={require('../image/snowboard2.jpg')}/></li>
-                    <li><img src={require('../image/snowboard4.jpg')}/></li>
-                </ul>
+                <h1>SNOWBOADRING</h1>
+                
+                <h3>The board makes you fall in love with winter and look forward to its arrival.</h3>
             </div>
             </div>
             <div className="section">
             <div className="p fixed">
-                
+                <ul className="img-list">
+                        <li><span className="img-placeholder"></span></li>
+                        <li><img src={require('../image/snowboard6.jpg')}/></li>
+                        <li><img src={require('../image/snowboard1.jpg')}/></li>
+                        <li><img src={require('../image/snowboard3.jpg')}/></li>
+                        <li><span className="img-placeholder"></span></li>
+                        <li><img src={require('../image/snowboard5.jpg')}/></li>
+                        <li><span className="img-placeholder"></span></li>
+                        <li><img src={require('../image/snowboard2.jpg')}/></li>
+                        <li><img src={require('../image/snowboard4.jpg')}/></li>
+                </ul>
             </div>
             </div>
             <div className="section">
             <div className="trevel fixed p">
-            <h1>Traveling</h1>
+            <h1>TRAVELING</h1>
+            <h3>Only two things we will regret on deathbed – that we are a little loved and little traveled.</h3>
+            </div>
+            </div>
+            <div className="section">
+            <div className="p fixed">
             <div className="container">
                 <div className="box">
                     <img src={require('../image/Barcelona.jpg')}/>
@@ -63,16 +69,126 @@ const Hobby = () => {
                     <img src={require('../image/Innsbruck.jpg')}/>
                     <span>Innsbruck</span>
                 </div>
-                </div>
+            </div>
+            </div>
+            </div>
+            <div className="section">
+            <div className="p fixed">
+            <h1>GASTRO TRIP</h1>
+            <h3>What's the point of traveling if you don't taste their food</h3>
             </div>
             </div>
             <div className="section">
-            <div className="p fixed">For my wife and me, she was like a little child. Our world revolved around her. We used to play with her, tease her. We even celebrated her 80th birth day with a grand cake cutting ceremony attended by my wife’s friends in Kolkata. It was a moment of happiness for her as she kept smiling at every one greeting her on her birth day without knowing whose birth day it was. So when one of the guests greeted her with a “wish you a happy birth day”, she promptly responded by wishing her the same!</div>
+            <div className="p fixed" style={{display:"flex", justifyContent:'center'}}>
+            <div className="gastro_trip">
+            <figure class="snip0016">
+                <img src={require('../image/gastro/barca.jpg')} style={{width:'100%', height:'100%'}}/>    
+                <figcaption>
+                    <h2>Barcelona</h2>
+                    <p>Spain</p>                    
+                </figcaption>			
+            </figure>   
+            <figure class="snip0016">
+             <img src={require('../image/gastro/girona.jpg')} style={{width:'100%', height:'100%'}}/>        
+                <figcaption>
+                    <h2>Girona</h2>
+                    <p>Spain</p>                    
+                </figcaption>			
+            </figure>           
+            <figure class="snip0016">
+            <img src={require('../image/gastro/lloret.jpg')} style={{width:'100%', height:'100%'}}/>        
+                <figcaption>
+                    <h2>Lloret de Mar</h2>
+                    <p>Spain</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/venezia.jpg')} style={{width:'100%', height:'100%'}}/>       
+                <figcaption>
+                    <h2>Venezia</h2>
+                    <p>Italy</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/vilna.jpg')} style={{width:'100%', height:'100%'}}/>       
+                <figcaption>
+                    <h2>Vilnius</h2>
+                    <p>Litvania</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/aus.jpg')} style={{width:'100%', height:'100%'}}/>      
+                <figcaption>
+                    <h2>Innsbruck</h2>
+                    <p>Austria</p>                    
+                </figcaption>			
+            </figure>  
+            <figure class="snip0016">
+            <img src={require('../image/gastro/lviv.jpg')} style={{width:'100%', height:'100%'}}/>    
+                <figcaption>
+                    <h2>Lviv</h2>
+                    <p>Ukraine</p>                    
+                </figcaption>			
+            </figure>  
+            <figure class="snip0016">
+            <img src={require('../image/gastro/lviv1.jpg')} style={{width:'100%', height:'100%'}}/>    
+                <figcaption>
+                    <h2>Lviv</h2>
+                    <p>Ukraine</p>                    
+                </figcaption>			
+            </figure> 
+            <figure class="snip0016">
+            <img src={require('../image/gastro/mir.jpg')} style={{width:'100%', height:'100%'}}/>    
+                <figcaption>
+                    <h2>Mir</h2>
+                    <p>Belarus</p>                    
+                </figcaption>			
+            </figure> 
+            <figure class="snip0016">
+            <img src={require('../image/gastro/lida.jpg')} style={{width:'100%', height:'100%'}}/>   
+                <figcaption>
+                    <h2>Lida</h2>
+                    <p>Belarus</p>                    
+                </figcaption>			
+            </figure> 
+            <figure class="snip0016">
+            <img src={require('../image/gastro/berlin.jpg')} style={{width:'100%', height:'100%'}}/> 
+                <figcaption>
+                    <h2>Berlin</h2>
+                    <p>Germany</p>                    
+                </figcaption>			
+            </figure> 
+            <figure class="snip0016">
+            <img src={require('../image/gastro/home.jpg')} style={{width:'100%', height:'100%'}}/>  
+                <figcaption>
+                    <h2>Home</h2>
+                    <p>Sweet home</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/bar.jpg')} style={{width:'100%', height:'100%'}}/>  
+                <figcaption>
+                    <h2>Baranovichy</h2>
+                    <p>Belarus</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/minsk.jpg')} style={{width:'100%', height:'100%'}}/>  
+                <figcaption>
+                    <h2>Minsk</h2>
+                    <p>Belarus</p>                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0016">
+            <img src={require('../image/gastro/grodno.jpg')} style={{width:'100%', height:'100%'}}/>
+                <figcaption>
+                    <h2>Grodno</h2>
+                    <p>Belarus</p>                    
+                </figcaption>			
+            </figure>  
+            </div> 
             </div>
-            <div className="section">
-            <div className="p fixed">It was interesting to know that even after destroying her brain cells; the disease could not take away the basic courtesies from her, acquired during her training as a Telephone Operator long long ago. They remained entrenched in her till her last breath. She never forgot to express her sincere thanks whenever we help her with little things.</div>
             </div>
-            
             <div className="section">
             <p className="fixed white">Thanks for watching</p>
             </div>

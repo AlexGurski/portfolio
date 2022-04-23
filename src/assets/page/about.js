@@ -20,7 +20,7 @@ const About = () => {
         },[])
 
        setTimeout(()=>{
-        setDelay({transitionDelay:'0ms', transition:'all 300ms'})
+        setDelay({transitionDelay:'0ms', transition:'all 400ms'})
        },0)
 
     const [delay,setDelay] = useState()

@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "../style/style.css"
+import "../../style/style.css"
 import {Link} from 'react-scroll'
 import { BsChevronDown } from 'react-icons/bs';
 import AOS from 'aos';

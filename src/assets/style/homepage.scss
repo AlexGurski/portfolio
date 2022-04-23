@@ -149,7 +149,6 @@ $colorBisq:bisque;
         height: 2px;
         background: inherit;
     }
-
     }
     .menu{
         position: fixed;
@@ -201,9 +200,6 @@ $colorBisq:bisque;
     }
 }
 
-
-
-
 /* Moves line down */
 .menu-wrap .hamburger > div:after{
     top: 10px;
@@ -237,3 +233,26 @@ $colorBisq:bisque;
 }
 
 
+
+.homepage_about{
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #101010;
+    flex-direction: column;
+    h1 {
+        font-family: 'Inconsolata', Consolas, monospace;
+          font-size: 4em;
+          color: red;
+          letter-spacing: 2px;
+          font-weight: 900;
+      }
+     .bzsp{
+        height: 82vh;
+         color:white;
+         border: 1px solid red;
+       
+     }
+    
+}

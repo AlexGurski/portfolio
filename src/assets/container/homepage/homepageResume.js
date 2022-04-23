@@ -1,7 +1,5 @@
-import React,{useEffect} from "react";
-import "../style/style.css"
-import { BsChevronDown } from 'react-icons/bs';
-import AOS from 'aos';
+import React from "react";
+import "../../style/style.css"
 import 'aos/dist/aos.css';
 
 const HomepageHeader = () => {
@@ -36,6 +34,7 @@ const HomepageHeader = () => {
                                 </div>
                                 <div className="resume_header_right">
                                     <div class="resume_photo">
+                                        <img style={{width:'100%'}}src={require('../../image/photo.jpg')}/>
                                     </div>
 
                                 </div>

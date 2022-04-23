@@ -1,8 +1,8 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "../style/style.css"
-import HomepageHeader from '../container/homepageHeader'
-import HomepageResume from '../container/homepageResume'
-
+import HomepageHeader from '../container/homepage/homepageHeader'
+import HomepageResume from '../container/homepage/homepageResume'
+import HomepageAbout from '../container/homepage/homepageAbout'
 
 const Homepage = () => {
 
@@ -11,6 +11,7 @@ const Homepage = () => {
        <>
         <HomepageHeader/>
         <HomepageResume/>
+        <HomepageAbout/>   
        </>
     ) 
 }

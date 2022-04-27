@@ -2,7 +2,7 @@ import React from "react";
 import {Header} from "./assets/container/header"
 import Homepage from "./assets/page/homepage"
 import Hobby from "./assets/page/hobby"
-import About from "./assets/page/about"
+import About from "./assets/page/aboutMe"
 import {Routes, Route,}  from 'react-router-dom'
 function App() {
 

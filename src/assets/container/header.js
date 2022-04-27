@@ -4,10 +4,8 @@ import {Link, Outlet}  from 'react-router-dom'
 const Menu =(props) =>{
     const [check, setCheck] = useState(false);
     return (
-                <div className="menu-wrap">
-                    
-                    <input type="checkbox" className="toggler" checked={check} onClick={()=>setCheck(!check)}/>   
-                                     
+                <div className="menu-wrap">                    
+                    <input type="checkbox" className="toggler" checked={check} onClick={()=>setCheck(!check)}/>                                      
                     <div className="hamburger">{props.name}<div></div></div>
                     <div className="menu">
                         <div>

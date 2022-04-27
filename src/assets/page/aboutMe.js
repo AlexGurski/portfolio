@@ -3,6 +3,8 @@ import "../style/about.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Menu} from "../container/header"
+import {MyStory} from "../container/about/about";
+import {Link} from 'react-scroll'
 
 const stylesheet = {
     about:{
@@ -13,7 +15,7 @@ const stylesheet = {
     }
 }
 
-const About = () => {
+const AboutMe = () => {
 
         useEffect(()=>{
           AOS.init();
@@ -28,7 +30,6 @@ const About = () => {
     const [iam,setIam]= useState({text:'I am',style:{color:'red'}})
     const [alex,setAlex]= useState({text:'Alex',style:{color:'red'}})
    
-    
       const  onHover = (id)=>{
         if (id==="hello") {setHello({text:'About',style:{color:'white',transform: "translate(25px,0)"}})}
         if (id==="iam") {setIam({text:'Work',style:{color:'red',transform: "translate(25px,0)"}})}
@@ -42,7 +43,9 @@ const About = () => {
 
     const [menuName, setMenuName] = useState('Alex Gurski')
     const [menuStyle, setMenuStyle] = useState({color:'white', position:'fixed', top:'3%', right:'3.5%', zIndex:1 })
+
     return (
+        <>
        <div className="about">
            <div className="about_photo" ></div>
            <div className="about_menu" style={menuStyle}
@@ -52,11 +55,13 @@ const About = () => {
              <Menu name={menuName} /> 
            </div>
            <div style={stylesheet.about} className="about_header_text" >
+           <Link to="about_text" duration={2000} spy={true} smooth={true} >
             <h1 style={{...hello.style, ...delay }}className="about_header" id="hello" data-aos="fade-up"  data-aos-duration="1000"  
                 onMouseEnter={(el)=>{onHover(el.target.id)}} 
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}
             >{hello.text}
             </h1>
+            </Link>
             <h1 style={{...iam.style, ...delay }}className="about_header" id="iam" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="500"
                 onMouseEnter={(el)=>{onHover(el.target.id)}}
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}
@@ -69,6 +74,8 @@ const About = () => {
             </h1>
            </div>
        </div>
+       <MyStory/>
+       </>
     ) 
 }
-export default About
+export default AboutMe

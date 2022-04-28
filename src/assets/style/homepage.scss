@@ -243,7 +243,7 @@ $colorBisq:bisque;
     display: flex;
     align-items: center;
     height: auto;
-    background: #101010;
+    background: #1f1d18;
     flex-direction: column;
     h1 {
         font-family: 'Inconsolata', Consolas, monospace;
@@ -258,13 +258,55 @@ $colorBisq:bisque;
          color:white;
         
          .my_site{
-            border: 1px solid red;
              width: 100%;
-             height: 100%;
+             height: calc(98% - 4em);
              display: flex;
              align-items: center;
+             justify-content: space-around;
              padding: 0 3%;
-           
+
+             .mySite_images{           
+                height: 100%;
+                width: calc(100% - 480px);
+                display: grid;
+                grid-template-columns: repeat(4, calc(25% - 10px));
+                grid-template-rows: repeat(3, calc(33% - 10px));
+                grid-gap: 10px;
+                img {
+                    width: 100%;
+                   height: 100%;
+                   &:hover{
+                    width: 10%;
+                }
+                }
+                
+                & :nth-child(1){
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+                & :nth-child(3){
+                    grid-column-start: 4;
+                    grid-column-end: 5;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+                & :nth-child(4){
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 2;
+                    grid-row-end: 4;
+                }
+                & :nth-child(5){
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    
+                }
+                & :nth-child(6){
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    
+                }
+            }
              .frameworks{
                 color: rgb(0, 0, 0);
                 text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
@@ -283,12 +325,27 @@ $colorBisq:bisque;
                  overflow-x: hidden; 
                  border-radius: 10px;
                  padding: 1%;
+                
                  h2{
                      text-align: center;
                      padding-bottom:1em;
+                     
                  }
-                 h5{
-                    padding-bottom:1em;
+                 h3{
+                     padding: 1em 0;
+                 }
+                 p{
+                     text-align: left;
+                     padding: 2px 0;
+                 }
+                 section{
+                     position: absolute;
+                     bottom: 0px;
+                     left:-1%;
+                     text-align: center;
+                     width: 101%;
+                     padding: 10px;
+                     background-color: grey;
                  }
                  .flare {
                     position: absolute;
@@ -313,28 +370,12 @@ $colorBisq:bisque;
         }
     }
 .flux {
-    font-family: neon;
-   color: #426DFB;
-   font-size: 9vw;
-   line-height: 9vw;
-   text-shadow: 0 0 3vw #2356FF;
-   animation: flux 2s linear infinite;
-   -moz-animation: flux 2s linear infinite;
-   -webkit-animation: flux 2s linear infinite;
-   -o-animation: flux 2s linear infinite;
+    font-family: PlayfairDisplay;
+   color:white;
+   font-size: 60px;
  }
  
- @keyframes flux {
-   0%,
-   100% {
-     text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
-     color: #28D7FE;
-   }
-   50% {
-     text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
-     color: #146C80;
-   }
- }
+
 
  
      .typing-demo {

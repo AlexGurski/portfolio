@@ -26,7 +26,7 @@ const HomepageHeader = () => {
                 </div>
             </div>
             <div className="homepage_footer">
-                <Link to="resume" duration={2000} spy={true} smooth={true} className="homepage_footer__item">
+                <Link to="homepage_about" duration={2000} spy={true} smooth={true} className="homepage_footer__item">
                     <BsChevronDown fontSize={'17px'} />
                 </Link>
             </div>

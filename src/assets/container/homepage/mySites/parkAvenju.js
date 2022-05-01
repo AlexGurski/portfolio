@@ -21,22 +21,23 @@ export  const ParkAvenju = () => {
                 <p>JavaScript</p> 
                 <p>CSS</p>
                 <p>HTML</p> 
-                <h3>DEV TOOLS</h3>   
+                <h3>DEV TOOLS</h3>                 
                 <p>Atom</p>
                 <p>NPM</p>
-                <p>Guthub</p>
+                <p>Github</p>
                 <p>Heroku</p>
+                <p>AJAX</p>  
                 <section>Link: <span>Coming soon</span></section>
                 
                 </form>
                <div className=" parkAveniu mySite_images">
-                <img className="img1" src={require('../../../image/sites/parkaveniu/home.jpg')}/>
-                <img src={require('../../../image/sites/parkaveniu/auth.jpg')}/> 
-                <img src={require('../../../image/sites/parkaveniu/galeryA.jpg')}/>
-                <img src={require('../../../image/sites/parkaveniu/menuA.jpg')}/>
-                <img src={require('../../../image/sites/parkaveniu/menu.jpg')}/>
-                <img src={require('../../../image/sites/parkaveniu/order.jpg')}/>
-                <img src={require('../../../image/sites/parkaveniu/orderA.jpg')}/>
+                
+                <div><img className="img1" src={require('../../../image/sites/parkaveniu/home.jpg')}/></div>
+
+
+                <div><img src={require('../../../image/sites/parkaveniu/menuA.jpg')}/></div>
+                <div><img src={require('../../../image/sites/parkaveniu/order.jpg')}/></div>
+
                  
                </div>
             </div>

@@ -10,9 +10,8 @@ const Homepage = () => {
     return (
        <>
         <HomepageHeader/>
-        <HomepageAbout/>  
         <HomepageResume/>
-         
+        <HomepageAbout/> 
        </>
     ) 
 }

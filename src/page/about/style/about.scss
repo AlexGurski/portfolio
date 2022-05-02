@@ -12,6 +12,12 @@
   align-items: center;
   .about_header_text{
     width: 50%;
+    display:'flex';
+    flex-direction: column;
+    font-size: 4.2vw;
+    cursor: pointer;
+    @media screen and (max-width:1000px) {font-size: 5.4vw;}
+
   }
   .about_header{
     transition: all 0.3s;
@@ -19,7 +25,6 @@
     width: max-content;
     letter-spacing: -2px;
     z-index: 0;
-
   }
   .about_photo{
     position: absolute;
@@ -27,8 +32,14 @@
     background: url('../../../assets/image/MyPhoto.png') right/auto 100% no-repeat;
     height: 100%;
     width: 100%;
-    right: 10%;
+    right: 5%;
+    @media screen and (max-width:1000px) {
+      right: 0%;
+      height: 100%;
+      width: 100%;
+    }
   }
+
 }
 .about_about{
   padding: 3% 0 0 0;
@@ -42,11 +53,21 @@
     width: 1280px;
     max-width: 100%;
     padding-bottom: 2%;
+    @media screen and (max-width:1100px) {padding: 0 1em 2em 1em;}
     p{
       font-family: 'Semibold'; 
       font-size: 23px;
       padding: 5px 0 0 0;
-
+      @media screen and (max-width:630px) {font-size: 0.84em;}
     }
   }
-}
+  .about_contacts{
+    font-size: 5em;
+    @media screen and (max-width:700px) {
+        font-size: 10vw;
+    }
+    div{
+      margin: 0 0.5em 0.5em 0;
+    }
+  }
+}  

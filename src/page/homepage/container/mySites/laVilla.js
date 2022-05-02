@@ -8,10 +8,10 @@ export  const LaVilla = () => {
             <div className="my_site">            
                 <form className="frameworks">
                         <span class="flare"></span>
-                        <h2>PARK AVENIU</h2>
+                        <h2>LA VILLA</h2>
                         <MdDeveloperBoard fontSize={'3em'}/>                
-                        <h5>My thesis. A website for an existing cafe, which was in release for a whole year, but then the director did not want to extend the hosting</h5>
-                        <h5>Currently unavailable online, but I will restore it soon</h5>
+                        <h5>First full stack web-project. A website for a pizzeria. Node JS and MongoDB were used for the server side. Frontend on pure HTML+CSS.</h5>
+                        <h5>A pen test in web development. And I liked it.</h5>
                         <h3>LANGUAGES I SPEAK:</h3>
                         <p>Node.js</p> 
                         <p>MongoDB</p> 

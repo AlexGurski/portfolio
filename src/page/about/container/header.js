@@ -53,7 +53,7 @@ const AboutHeader = () => {
            > 
              <Menu name={menuName} /> 
            </div>
-           <div style={stylesheet.about} className="about_header_text" >
+           <div  className="about_header_text" >
            <Link to="about_text" duration={2000} spy={true} smooth={true} >
                 <h1 style={{...hello.style, ...delay }}className="about_header" id="hello" data-aos="fade-up"  data-aos-duration="1000"  
                     onMouseEnter={(el)=>{onHover(el.target.id)}} 
@@ -68,11 +68,13 @@ const AboutHeader = () => {
                 >{iam.text}
                 </h1>
             </Link>
-            <h1 style={{...alex.style, ...delay }}className="about_header" id="alex" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="1000"
-                onMouseEnter={(el)=>{onHover(el.target.id)}}
-                onMouseLeave={(el)=>{onLeave(el.target.id)}}
-            >{alex.text}
-            </h1>
+            <Link to="contacts" duration={4000} spy={true} smooth={true} >
+                <h1 style={{...alex.style, ...delay }}className="about_header" id="alex" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="1000"
+                    onMouseEnter={(el)=>{onHover(el.target.id)}}
+                    onMouseLeave={(el)=>{onLeave(el.target.id)}}
+                >{alex.text}
+                </h1>
+            </Link>
            </div>
        </div>
        </>

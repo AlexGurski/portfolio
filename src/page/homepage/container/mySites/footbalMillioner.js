@@ -27,7 +27,7 @@ export  const FootbalMillioner = () => {
                 <section>Link: <span>Coming soon</span></section>
                 </form>
                 <div className="mySite_images">
-               <div id='phone'><img src={require('../../../../assets/image/sites/parkaveniu/footbal.png')}/></div>   
+                  <div id='phone'><img src={require('../../../../assets/image/sites/parkaveniu/footbal.png')}/></div>   
                </div>
             </div>
             

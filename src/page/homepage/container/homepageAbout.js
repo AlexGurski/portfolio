@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import  {ParkAvenju}  from "./mySites/parkAvenju";
 import { FootbalMillioner } from "./mySites/footbalMillioner";
 import { BZSP } from "./mySites/bzsp";
-
+import { LaVilla } from "./mySites/laVilla";
 
 const HomepageAbout = () => {
     useEffect(()=>{
@@ -23,8 +23,9 @@ const HomepageAbout = () => {
                 emulateTouch={true} infiniteLoop width={'95vw'} stopOnHover={true} showThumbs={false}
                 transitionTime={'1200' } interval={'15000'} swipeScrollTolerance={'50'}
             >  
-                <ParkAvenju/>                
                 <BZSP/>
+                <LaVilla/>
+                <ParkAvenju/>                               
                 <FootbalMillioner/>
             </Carousel>
         </div>

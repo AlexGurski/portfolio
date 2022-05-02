@@ -1,3 +1,4 @@
+@import url(animations.css);
 @import url(homepageResume.css);
 @font-face {
 	font-family: 'PlayfairDisplay'; 
@@ -12,7 +13,7 @@
     src: url(/src/assets/font/neon.ttf);
   }   
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,600&display=swap');
-@import url(homepageResume.css);
+
 
 
 
@@ -62,7 +63,7 @@
         justify-content: center;
     
         .homepage_footer__item{
-            border: 2px solid $colorBisq;
+            border: 2px solid bisque;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -80,10 +81,6 @@
     }
 }
     
-
-
-
-
 .homepage_about{
     padding-top: 2%;
     display: flex;
@@ -217,34 +214,7 @@
             left: 200%;
         }
     }
-
-     .typing-demo {
-        color:bisque;
-        padding: 1% 0;
-        text-align: center;
-        width: 73ch;
-        animation: typing 8s steps(73), blink .5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-family: monospace;
-        font-size: 2em;
-        @media screen and (max-width:1070px){
-            font-size: 2.1vw;
-        }
-      }
-      
-      @keyframes typing {
-        from {
-          width: 0
-        }
-      }
-          
-      @keyframes blink {
-        50% {
-          border-color: transparent
-        }
-      }
-    
 }
+    
+
 

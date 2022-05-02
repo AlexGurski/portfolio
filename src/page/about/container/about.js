@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "../../style/about.css"
+import "../style/about.css"
 
 
 export const MyStory = () => {

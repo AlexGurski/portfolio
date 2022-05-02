@@ -2,7 +2,7 @@ import React from "react";
 import {Header} from "./container/header"
 import Homepage from "./page/homepage/homepage"
 import Hobby from "./page/hobby"
-import About from "./page/aboutMe"
+import About from "./page/about/aboutMe"
 import {Routes, Route,}  from 'react-router-dom'
 function App() {
 

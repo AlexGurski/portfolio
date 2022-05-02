@@ -1,8 +1,8 @@
 import React,{useEffect, useState} from "react";
-import "../../style/about.css"
+import "../style/about.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Menu} from "../header"
+import {Menu} from "../../../container/header"
 import {Link} from 'react-scroll'
 
 const stylesheet = {

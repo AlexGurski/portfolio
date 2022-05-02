@@ -14,7 +14,6 @@ const stylesheet = {
     }
 }
 
-
 const AboutHeader = () => {
 
         useEffect(()=>{
@@ -56,17 +55,19 @@ const AboutHeader = () => {
            </div>
            <div style={stylesheet.about} className="about_header_text" >
            <Link to="about_text" duration={2000} spy={true} smooth={true} >
-            <h1 style={{...hello.style, ...delay }}className="about_header" id="hello" data-aos="fade-up"  data-aos-duration="1000"  
-                onMouseEnter={(el)=>{onHover(el.target.id)}} 
-                onMouseLeave={(el)=>{onLeave(el.target.id)}}
-            >{hello.text}
-            </h1>
+                <h1 style={{...hello.style, ...delay }}className="about_header" id="hello" data-aos="fade-up"  data-aos-duration="1000"  
+                    onMouseEnter={(el)=>{onHover(el.target.id)}} 
+                    onMouseLeave={(el)=>{onLeave(el.target.id)}}
+                >{hello.text}
+                </h1>
             </Link>
-            <h1 style={{...iam.style, ...delay }}className="about_header" id="iam" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="500"
-                onMouseEnter={(el)=>{onHover(el.target.id)}}
-                onMouseLeave={(el)=>{onLeave(el.target.id)}}
-            >{iam.text}
-            </h1>
+            <Link to="work" duration={3000} spy={true} smooth={true} >
+                <h1 style={{...iam.style, ...delay }}className="about_header" id="iam" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="500"
+                    onMouseEnter={(el)=>{onHover(el.target.id)}}
+                    onMouseLeave={(el)=>{onLeave(el.target.id)}}
+                >{iam.text}
+                </h1>
+            </Link>
             <h1 style={{...alex.style, ...delay }}className="about_header" id="alex" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="1000"
                 onMouseEnter={(el)=>{onHover(el.target.id)}}
                 onMouseLeave={(el)=>{onLeave(el.target.id)}}

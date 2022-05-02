@@ -1,0 +1,250 @@
+@import url(homepageResume.css);
+@font-face {
+	font-family: 'PlayfairDisplay'; 
+	src: url(/src/assets/font/PlayfairDisplay.ttf); 
+}
+@font-face {
+	font-family: 'DearLove'; 
+	src: url(/src/assets/font/Dearlove.ttf); 
+}
+@font-face {
+    font-family: neon;
+    src: url(/src/assets/font/neon.ttf);
+  }   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,600&display=swap');
+@import url(homepageResume.css);
+
+
+
+
+.homepage{
+    font-family: PlayfairDisplay;
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/image/footerBackground.jpg') 0 0/100% 100% no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    @media screen and (orientation:portrait){
+        background: url('../../../assets/image/footerBackgroundAdaptive.jpg') 0 0/100% 100% no-repeat;
+    }
+    .homepage_header{
+        flex-basis: 10%;
+    }
+    .homepage_middle{
+        flex-basis: 80%;
+        font-size: 70px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .homepage__middle{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            p{
+               font-size: 25px;
+               padding-top: 10px;
+               @media screen and (orientation:portrait){
+                font-size: 4vw;
+            }
+            }
+            @media screen and (orientation:portrait){
+                font-size: 10vw;
+            }
+            
+        }
+    }
+    .homepage_footer {
+        flex-basis: 10%;
+        display: flex;
+        justify-content: center;
+    
+        .homepage_footer__item{
+            border: 2px solid $colorBisq;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: antiquewhite;
+            transition: all 0.7s;
+            cursor: pointer;
+                &:hover{
+                    border-color: white;
+                    color: white;
+                }
+        }  
+    }
+}
+    
+
+
+
+
+.homepage_about{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background: #1f1d18;
+    flex-direction: column;
+
+    h1{
+        font-family: PlayfairDisplay;
+       color:white;
+       font-size: 60px;
+       @media screen and (max-width:500px){
+        text-align: center;
+        font-size: 7vw;
+    }
+     }
+
+     .mySite_container{
+        height: 85vh;
+         color:white;
+         @media screen and (max-width:500px){
+             height: auto;
+         }
+
+         .my_site{
+             width: 100%;
+             height: calc(98% - 4em);
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+             padding: 0 3%;
+             @media screen and (max-width:500px){
+                 padding: 20px 0;
+                flex-direction: column;
+                height: auto;
+               & .frameworks{
+                    width: 95%;
+                }
+            }
+          
+             .mySite_images{  
+                padding: 20px 0;         
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 20px 0;         
+                width: calc(100% - 400px);
+                transition: 1s;
+                div{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: auto;
+                    img{
+                        max-height: 95%
+                    }
+                }            
+                @media screen and (max-width:1020px){.toHiden{display: none;} }
+                @media screen and (max-width:650px){
+                  display: none;
+                }
+            }
+
+             .frameworks{
+                color: rgb(0, 0, 0);
+                text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
+                 0px 4px 13px rgba(0,0,0,0.1),
+                 0px 8px 23px rgba(0,0,0,0.1);
+                 width: 350px;
+                 height: 600px;
+                 background:
+                            linear-gradient( to right, 
+                            rgba(255,255,255,0) 0%,
+                            rgba(255,255,255,0.8) 50%,
+                            rgba(128,186,232,0) 99%,
+                            rgba(128,186,232,0) 100%);
+                 background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+                 position: relative; 
+                 overflow-x: hidden; 
+                 border-radius: 10px;
+                 padding: 1%;
+                    @media screen and (max-width:500px){
+                        width: 90%;
+                        padding: 1em;
+                        
+                    }
+                 h2{
+                     text-align: center;
+                     padding-bottom:1em;
+                     
+                 }
+                 h3{
+                     padding: 1em 0;
+                 }
+                 p{
+                     text-align: left;
+                     padding: 2px 0;
+                 }
+                 section{
+                     position: absolute;
+                     bottom: 0px;
+                     left:-1%;
+                     text-align: center;
+                     width: 101%;
+                     padding: 10px;
+                     background-color: grey;
+                 }
+                 .flare {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 45px;
+                    transform: skewX(-45deg); // Наклон
+                    animation: flareAnimation;
+                    left: -150%;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+                    animation: flareAnimation 4s infinite linear; // Время и тип анимации можно менять
+                    @media screen and (max-width:500px){
+                        display: none;
+                    }
+                }
+             }
+         }
+     }
+     @keyframes flareAnimation {
+        0% {
+            left: -150%;
+        }
+        100% {
+            left: 200%;
+        }
+    }
+
+     .typing-demo {
+        color:bisque;
+        padding: 1% 0;
+        text-align: center;
+        width: 73ch;
+        animation: typing 8s steps(73), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+        @media screen and (max-width:1070px){
+            font-size: 2.1vw;
+        }
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+    
+}
+

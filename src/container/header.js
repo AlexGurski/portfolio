@@ -13,9 +13,9 @@ const Menu =(props) =>{
                             <div>
                                 <ul>
                                     <li><Link to="/" onClick={()=>setCheck(!check)}>Home</Link></li>
-                                    <li><Link to="/about">About me</Link></li>
+                                    <li><Link to="/about" onClick={()=>setCheck(!check)}>About me</Link></li>
                                     <li><Link to="/hobby" onClick={()=>setCheck(!check)}>Hobby</Link></li>
-                                    <li><Link to="#">Contact</Link></li>
+                                    <li><Link to="/contact" onClick={()=>setCheck(!check)}>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import 'flag-icons'
 const Hobby = () => {
     useEffect(()=>{
+        window.scrollTo(0, 1);
       AOS.init();
     },[])
 
@@ -26,21 +27,21 @@ const Hobby = () => {
             <div className="section">
             <div className="p fixed hobby_frame" style={{display:"flex", justifyContent:'center'}}>
                 <div className="travel_container">            
-                    <div><img src={require('../../assets/image/travel/barca.jpg')}/><span class="fi fi-es"></span></div>
-                    <div><img src={require('../../assets/image/travel/lviv.jpg')}/><span class="fi fi-ua"></span></div>
-                    <div><img src={require('../../assets/image/travel/innsbruck.jpg')}/><span class="fi fi-at"></span></div>
-                    <div><img src={require('../../assets/image/travel/it.jpg')}/><span class="fi fi-it"></span></div>   
-                    <div><img src={require('../../assets/image/travel/fr.jpg')}/><span class="fi fi-fr"></span></div>  
-                    <div><img src={require('../../assets/image/travel/girona.jpg')}/><span class="fi fi-es"></span></div>
-                    <div><img src={require('../../assets/image/travel/pl.jpg')}/><span class="fi fi-pl"></span></div>
-                    <div><img src={require('../../assets/image/travel/ger.jpg')}/><span class="fi fi-de"></span></div>
-                    <div><img src={require('../../assets/image/travel/vilna.jpg')}/><span class="fi fi-lv"></span></div>
-                    <div><img src={require('../../assets/image/travel/cat.jpg')}/><span class="fi fi-es-ct"></span></div>                   
-                    <div><img src={require('../../assets/image/travel/cz.jpg')}/><span class="fi fi-cz"></span></div>  
-                    <div><img src={require('../../assets/image/travel/gervy.jpg')}/><span class="fi fi-by"></span></div>  
-                    <div><img src={require('../../assets/image/travel/uk.jpg')}/><span class="fi fi-ua"></span></div>
-                    <div><img src={require('../../assets/image/travel/mald.jpg')}/><span class="fi fi-by"></span></div>
-                    <div><img src={require('../../assets/image/travel/thrones.jpg')}/><span class="fi stark"></span></div>
+                    <div><img src={require('../../assets/image/travel/barca.jpg')}/><span className="fi fi-es"></span></div>
+                    <div><img src={require('../../assets/image/travel/lviv.jpg')}/><span className="fi fi-ua"></span></div>
+                    <div><img src={require('../../assets/image/travel/innsbruck.jpg')}/><span className="fi fi-at"></span></div>
+                    <div><img src={require('../../assets/image/travel/it.jpg')}/><span className="fi fi-it"></span></div>   
+                    <div><img src={require('../../assets/image/travel/fr.jpg')}/><span className="fi fi-fr"></span></div>  
+                    <div><img src={require('../../assets/image/travel/girona.jpg')}/><span className="fi fi-es"></span></div>
+                    <div><img src={require('../../assets/image/travel/pl.jpg')}/><span className="fi fi-pl"></span></div>
+                    <div><img src={require('../../assets/image/travel/ger.jpg')}/><span className="fi fi-de"></span></div>
+                    <div><img src={require('../../assets/image/travel/vilna.jpg')}/><span className="fi fi-lv"></span></div>
+                    <div><img src={require('../../assets/image/travel/cat.jpg')}/><span className="fi fi-es-ct"></span></div>                   
+                    <div><img src={require('../../assets/image/travel/cz.jpg')}/><span className="fi fi-cz"></span></div>  
+                    <div><img src={require('../../assets/image/travel/gervy.jpg')}/><span className="fi fi-by"></span></div>  
+                    <div><img src={require('../../assets/image/travel/uk.jpg')}/><span className="fi fi-ua"></span></div>
+                    <div><img src={require('../../assets/image/travel/mald.jpg')}/><span className="fi fi-by"></span></div>
+                    <div><img src={require('../../assets/image/travel/thrones.jpg')}/><span className="fi stark"></span></div>
                 </div> 
             </div>
             </div>

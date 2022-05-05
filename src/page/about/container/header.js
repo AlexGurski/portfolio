@@ -48,10 +48,12 @@ const AboutHeader = () => {
        <div className="about">
            <div className="about_photo" ></div>
            <div className="about_menu" style={menuStyle}
+
            onMouseEnter={()=>{setMenuName('Menu'); setMenuStyle({...menuStyle,  color:'red'})}} 
            onMouseLeave={()=>{setMenuName('Alex Gurski'); setMenuStyle({...menuStyle, color:'white'})}} 
            > 
              <Menu name={menuName} /> 
+             
            </div>
            <div  className="about_header_text" >
            <Link to="about_text" duration={2000} spy={true} smooth={true} >

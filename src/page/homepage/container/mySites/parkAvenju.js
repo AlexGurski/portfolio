@@ -10,7 +10,7 @@ export  const ParkAvenju = () => {
         <div className="mySite_container"> 
             <div className="my_site">            
                 <form className="frameworks">
-                    <span class="flare"></span>
+                    <span className="flare"></span>
                     <h2>PARK AVENIU</h2>
                     <MdDeveloperBoard fontSize={'3em'}/>                
                     <h5>My thesis. A website for an existing cafe, which was in release for a whole year, but then the director did not want to extend the hosting</h5>

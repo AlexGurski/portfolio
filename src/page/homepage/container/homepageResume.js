@@ -5,9 +5,9 @@ import {RiReactjsFill} from 'react-icons/ri'
 const HomepageResume = () => {
     return (
         <div id="resume" className="homepage_resume">
-            <div class="lines">
-                <div class="line"></div>
-                <div class="line"></div>             
+            <div className="lines">
+                <div className="line"></div>
+                <div className="line"></div>             
             </div>
             <div className="resume_container"> 
                    <h1>I'm <span>Alexandr Gurski</span></h1>

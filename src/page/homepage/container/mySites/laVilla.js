@@ -7,7 +7,7 @@ export  const LaVilla = () => {
         <div className="mySite_container"> 
             <div className="my_site">            
                 <form className="frameworks">
-                        <span class="flare"></span>
+                        <span className="flare"></span>
                         <h2>LA VILLA</h2>
                         <MdDeveloperBoard fontSize={'3em'}/>                
                         <h5>First full stack web-project. A website for a pizzeria. Node JS and MongoDB were used for the server side. Frontend on pure HTML+CSS.</h5>

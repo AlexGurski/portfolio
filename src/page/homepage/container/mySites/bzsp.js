@@ -7,7 +7,7 @@ export  const BZSP = () => {
         <div className="mySite_container"> 
             <div className="my_site">            
                 <form className="frameworks">
-                <span class="flare"></span>
+                <span className="flare"></span>
                     <h2>BZSP</h2>
                     <MdDeveloperBoard fontSize={'3em'}/>                
                     <h5>Thesis to order. Upgrade of the existing site of the plant and reworking to more modern technologies.</h5>

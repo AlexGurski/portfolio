@@ -107,6 +107,7 @@
          }
 
          .my_site{
+             
              width: 100%;
              height: calc(98% - 5em);
              display: flex;
@@ -114,6 +115,7 @@
              justify-content: space-around;
              padding: 0 3%;
              @media screen and (max-width:500px){
+                 
                  padding: 20px 0;
                 flex-direction: column;
                 height: auto;
@@ -216,6 +218,4 @@
         }
     }
 }
-    
-
 

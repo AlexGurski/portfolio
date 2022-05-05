@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "../style/homepageResume.css"
 import {SiVk, SiTelegram, SiLinkedin, SiInstagram, SiMaildotru} from 'react-icons/si'
 

@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "../../style/homepageResume.css"
 
 import { MdDeveloperBoard } from 'react-icons/md';
@@ -27,8 +27,8 @@ export  const FootbalMillioner = () => {
                 <section>Link: <span>Coming soon</span></section>
                 </form>
                 <div className="mySite_images">
-                <div id='phone' className="toHiden"><img src={require('../../../../assets/image/sites/parkaveniu/footbal.png')}/></div>   
-                  <div id='phone'><img src={require('../../../../assets/image/sites/parkaveniu/football.png')}/></div>   
+                <div id='phone' className="toHiden"><img   alt=" " src={require('../../../../assets/image/sites/parkaveniu/footbal.png')}/></div>   
+                  <div id='phone'><img    alt=" " src={require('../../../../assets/image/sites/parkaveniu/football.png')}  /></div>   
                </div>
             </div>
             

@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "../../style/homepageResume.css"
 import { MdDeveloperBoard } from 'react-icons/md';
 
@@ -25,8 +25,8 @@ export  const BZSP = () => {
                     <section>Link: <a href="https://bzsp-5c9ae.web.app/" target="_blank">BZSP</a></section>     
                 </form>
                <div className="mySite_images">
-                    <div className="toHiden"><img src={require('../../../../assets/image/sites/parkaveniu/bzsp1.png')}/></div>
-                    <div><img src={require('../../../../assets/image/sites/parkaveniu/bzsp.png')}/></div>
+                    <div className="toHiden"><img src={require('../../../../assets/image/sites/parkaveniu/bzsp1.png')}  alt=" "/></div>
+                    <div><img src={require('../../../../assets/image/sites/parkaveniu/bzsp.png')}  alt=" "/></div>
                </div>
             </div>
         </div>

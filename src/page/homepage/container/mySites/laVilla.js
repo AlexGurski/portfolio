@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "../../style/homepageResume.css"
 import { MdDeveloperBoard } from 'react-icons/md';
 
@@ -27,8 +27,8 @@ export  const LaVilla = () => {
                         <section>Link: <span>Coming soon</span></section>
                     </form>
                <div className="mySite_images">
-                    <div className="toHiden"><img src={require('../../../../assets/image/sites/parkaveniu/lavilla.png')}/></div>
-                    <div><img src={require('../../../../assets/image/sites/parkaveniu/lavillaA.png')}/></div>
+                    <div className="toHiden"><img src={require('../../../../assets/image/sites/parkaveniu/lavilla.png')}  alt=" "/></div>
+                    <div><img src={require('../../../../assets/image/sites/parkaveniu/lavillaA.png')}  alt=" "/></div>
                </div>
             </div>
         </div>

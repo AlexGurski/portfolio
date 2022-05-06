@@ -6,7 +6,7 @@ const Menu =(props) =>{
     
     return (
                 <div className="menu-wrap">                    
-                    <input type="checkbox" className="toggler" checked={check} onChange={()=>setCheck(!check)}/>                                      
+                    <input type="checkbox" className="toggler" checked={check} defaultChecked={false} onChange={()=>setCheck(!check)}/>                                      
                     <div className="hamburger">{props.name}<div></div></div>
                     <div className="menu">
                         <div>

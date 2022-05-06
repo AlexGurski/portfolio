@@ -18,11 +18,6 @@ export const MyWork = () => {
             <p>And I wanted to continue doing web development, but the main job did not allow me to pay much attention to programming, I was also afraid to get out of my comfort zone and left everything as it is.</p>
         </div>
         <div className="about_container" data-aos="fade-up" data-aos-duration="2000">
-            <p>My most first project, after which I fell in love with web development, was a course work "website for a pizzeria".</p>
-            <p>I found the design I liked, little modified it and made it up in its likeness.</p>
-            <p>Having opened it now, I understand that it is not so beautiful, but then, seeing the result of my own work, I wanted to engage in web development.</p>
-        </div>
-        <div className="about_container" data-aos="fade-up" data-aos-duration="2000">
             <p>The year 2022 has come. I was already tired of the army, more and more restrictions were being introduced there, and I decided to return to what I like - web development. In addition, the February events pushed me to this even more.</p>
             <p>I decided to catch up, remember the old and learn something new. So I decided to try to write something on React Native in order to put it on Google Play in the future. So the idea came up to make a mobile game like "Who wants to become a millionaire", only on a football theme, as it is close to me. At the moment, the game is a little more than 60% complete, all because of a new thesis...</p>
         </div>

@@ -1,12 +1,20 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import "../../style/homepageResume.css"
 import { MdDeveloperBoard } from 'react-icons/md';
 
 export  const LaVilla = () => {
+    const [rotate,setRotate] = useState()
+    const [counter,setCounter] = useState(0)
+  
+    useEffect(()=>{
+        if (counter % 2){setRotate({transform: 'rotateY(180deg)'})}
+        else{setRotate({transform: 'rotateY(0deg)'})}
+    },[counter])
+    
     return (
         <div className="mySite_container">
-            <div className="flip-container">
-                <div className="card">
+            <div className="flip-container" onClick={()=>setCounter(counter+1)}>
+                <div className="card" style={rotate}>
                     <img src={require('../../../../assets/image/sites/parkaveniu/lavillaA.png')} className="back" alt="Card Back" />
                     <form className="frameworks front">
                         <h2>LA VILLA</h2>

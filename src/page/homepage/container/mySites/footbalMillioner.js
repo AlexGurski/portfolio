@@ -12,12 +12,11 @@ export  const FootbalMillioner = () => {
         else{setRotate({transform: 'rotateY(0deg)'})}
     },[counter])
     
-
     return (
         <div className="mySite_container"> 
          <div className="flip-container" onClick={()=>setCounter(counter+1)}>
                 <div className="card" style={rotate}>
-                    <img src={require('../../../../assets/image/sites/parkaveniu/footbal.png')} className="back" alt="Card Back" />
+                    <img src={require('../../../../assets/image/sites/parkaveniu/football.png')} className="back" alt="Card Back" />
                     <form className="frameworks front">
                         <h2>FOOTVALL QUIZ</h2>
                         <MdDeveloperBoard fontSize={'3em'}/>                

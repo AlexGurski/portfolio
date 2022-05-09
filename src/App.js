@@ -1,4 +1,6 @@
 import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {Header} from "./container/header"
 import {NotFound} from "./container/404"
 import Homepage from "./page/homepage/homepage"
@@ -6,13 +8,13 @@ import Hobby from "./page/hobby/hobby"
 import Contact from "./page/contact/contact"
 import About from "./page/about/aboutMe"
 import {Routes, Route,}  from 'react-router-dom'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 function App() {
-
-    AOS.init();
+useEffect(()=>{
+  AOS.init();
+},[])
 
   return (
     <div className="App">

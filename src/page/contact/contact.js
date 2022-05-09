@@ -14,22 +14,34 @@ const Contact = () => {
     const [name,setName]=useState('');
     const [email,setEmail]=useState('')
     const [text,setText]=useState('')
-    const [error, setError] = useState('')
+    const [error, setError] = useState({text:'',style:{opacity:1}})
+
+    useEffect(()=>{
+        if (error.text==='Thanks for the response') setTimeout(() => {
+            setError({style:{opacity:0}})
+        }, 1500);
+    },[error])
+
+
 
     const clear = () =>{
         setName('');
         setEmail('');
         setText('');
     }
-
+   
     const sendMessage = (text, email, name) =>{
-        let rez = '';
-        if (text === '' || text === ' ' ) {console.log('oi')}else{
-            if (email === '' || email === ' ' ) {console.log('oi')} else{
-                if (name === '' || name === ' ' ) {console.log('oi')} else{
+        let rez = [];
+        if (name === '' || name === ' ' ) {setError({text: `Fill in the Name field`,style:{opacity:1, color:'red'}})}else{
+            if (email === '' || email === ' ' ) {setError({text: `Fill in the Email field`,style:{opacity:1, color:'red'}})}else{
+                if (text === '' || text === ' ' ) {setError({text: `Fill in the Text field`,style:{opacity:1, color:'red'}})}else{
                     firebase.database().ref('send/'+name+'_'+email).update({text:text, email:email, name:name});
                     clear();
-                    setError('')
+                    setError({text:'Thanks for the response',
+                                style:{
+                                    opacity:1,
+                                    color:'green'
+                                }})
                 }
             }
         }
@@ -41,19 +53,20 @@ const Contact = () => {
             <h2>Thanks for taking the time to reach out.</h2>
             <form>
                 <div className="user-box">
-                    <input type="text" id='username' name="username" value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input type="text" id='username' name="username" value={name}  onChange={(e) => {setName(e.target.value); setError({setyle:{opacity:0}})}}/>
                     <label htmlFor='username'>Name</label>
                 </div>
                 <div className="user-box">
-                    <input type="text" name="" required="" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="text" name="" required="" value={email} onChange={(e) => {setEmail(e.target.value); setError({setyle:{opacity:0}})}}/>
                     <label>Email</label>
                 </div>
                 <div className="user-box">
-                    <textarea cols="30" rows="5" value={text} onChange={(e) => setText(e.target.value)}/>
+                    <textarea cols="30" rows="5" value={text} onChange={(e) => {setText(e.target.value); setError({setyle:{opacity:0}})}}/>
                     <label>Message</label>
                     <span> </span>
                     
                 </div>
+                <div style={{paddingTop:'20px', height:'1em', transition:'all 1s'}}><span style={{...error.style, transition:'opacity 1s'}}>{error.text}</span></div>
                 <a href="#" onClick={()=>{sendMessage(text, email, name) }}>
                 <span></span>
                 <span></span>
